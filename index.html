@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="uk">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
       rel="stylesheet"
@@ -432,8 +432,7 @@
 
         <div class="footer-subscribe">
           <p class="footer-sign">Підпишіться на розсилку</p>
-          <form action="" class="footer-form">
-            <label for="footer-mail"> </label>
+          <form class="footer-form">
             <input
               class="email-footer"
               type="email"
@@ -461,7 +460,7 @@
           </svg>
         </button>
         <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
-        <form action="" class="modal-form">
+        <form class="modal-form">
           <div class="form-modal">
             <label for="name">Ім'я</label>
             <div class="input-wrap">
@@ -475,7 +474,7 @@
           <div class="form-modal">
             <label for="phone">Телефон</label>
             <div class="input-wrap">
-              <input type="phone" id="phone" name="phone" class="label-modal" />
+              <input type="tel" id="phone" name="phone" class="label-modal" />
               <svg class="icon-profile" width="18px" height="18px">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
@@ -510,13 +509,14 @@
               name="accept"
               class="visually-hidden"
             />
-            <div class="checkbox">
-              <svg class="icon-checkbox" width="12px" height="11px">
-                <use href="./images/icons.svg#icon-Vector"></use>
-              </svg>
-            </div>
-            <label for="accept"
-              >Погоджуюся з розсилкою та приймаю
+
+            <label for="accept" class="label__checkbox">
+              <div class="checkbox">
+                <svg class="icon-checkbox" width="12px" height="11px">
+                  <use href="./images/icons.svg#icon-Vector"></use>
+                </svg>
+              </div>
+              Погоджуюся з розсилкою та приймаю
               <a class="accept-link" href="">Умови договору</a>
             </label>
           </div>

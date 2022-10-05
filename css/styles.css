@@ -734,9 +734,9 @@ justify-content: baseline;
 }
 
 .footer-subscribe{
-  margin-left: 93px;
+  margin-left: auto;
   display: block;
-  align-items: center;
+
   justify-content:center;
 }
 .footer-sign{
@@ -854,12 +854,7 @@ pointer-events: none;
   opacity: 1;
 }
 
-.cross{
-  fill:var(--primary-color);
-  
-  transition: fill 250ms var(--timing-animation);
 
-}
 
 .modal-title{
   font-weight: 700;
@@ -872,7 +867,7 @@ pointer-events: none;
   }
 
 
-.close{
+.button__close{
   position: absolute;
   top: 8px;
   right: 8px;
@@ -882,24 +877,23 @@ pointer-events: none;
   padding: 0;
   border-radius: 50%;
   background-color: var(--white-color);
-  border-color: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   
-  transition: border-color 250ms var(--timing-animation);
 
 }
+.cross{
+  fill:var(--primary-color);
+  transition: fill 250ms var(--timing-animation);
 
-.close:hover +.cross,
-.close:focus +.cross{
-  border-color: 1px solid var(--accent-color);
+}
+.button__close:hover+.cross,
+.button__close:focus+.cross{
+  fill: var(--accent-color);
+  
 }
 
 
-.cross:hover,
-.cross:focus{
-  fill: var(--accent-color)
-
-}
 
 .modal-form{
   margin: 12px 40px 20 px;
@@ -920,6 +914,7 @@ color: var(--secondary-color);
 
 .form-modal label{
   margin-bottom: 4px;
+  display: block;
 }
 
 .input-wrap{
@@ -943,6 +938,7 @@ fill:var(--accent-color);
 
 
 .label-modal{
+  display: block;
   width: 448px;
   height: 40px;
   padding-left: 42px;
@@ -980,6 +976,7 @@ margin-right: 8.4px;
 .accept-link{
   color: var(--accent-color);
   text-decoration: underline;
+  padding-left: 10px;
 }
 
 .visually-hidden {

@@ -882,16 +882,15 @@ pointer-events: none;
   
 
 }
-.cross{
-  fill:var(--primary-color);
-  transition: fill 250ms var(--timing-animation);
-
-}
-.button__close:hover+.cross,
-.button__close:focus+.cross{
+.button__close:hover .cross{
   fill: var(--accent-color);
   
 }
+.cross{
+  transition: fill 250ms var(--timing-animation);
+
+}
+
 
 
 
@@ -909,7 +908,7 @@ color: var(--secondary-color);
 .form-modal {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .form-modal label{

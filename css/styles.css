@@ -747,6 +747,7 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--white-color);
+margin-bottom: 20px;
 
 }
 
@@ -763,8 +764,6 @@ color: var(--white-color);
   background-color: transparent;
   color: var(--contact-send);
   padding-left: 16px;
-  position: relative;
-  top: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -778,8 +777,7 @@ color: var(--white-color);
 padding: 10px 28px;
 width: 200px;
 height: 50px;
-top: 20px;
-left: 12px;
+
 background-color: var(--accent-color);
 border-color: var(--accent-color);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -799,9 +797,12 @@ cursor: pointer;
 }
 
 .btn-subscribe{
-  margin-right: 20px;
+  margin-left: 12px;
 }
-
+.btn-modal{
+  top: 0;
+  left: 0;
+}
 
 /* modal window*/
 .backdrop.is-hidden{
@@ -915,6 +916,9 @@ color: var(--secondary-color);
   margin-bottom: 4px;
   display: block;
 }
+.textmod{
+  margin-bottom: 0px;
+}
 
 .input-wrap{
   position: relative;
@@ -990,6 +994,9 @@ margin-right: 8.4px;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+#accept:focus + Label div{
+  border: 1px solid var(--accent-color);
 }
 
 .checkbox{
